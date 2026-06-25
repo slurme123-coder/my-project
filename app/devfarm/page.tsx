@@ -1,3 +1,5 @@
+"use client";
+
 export const metadata = {
   title: "DevFarm — Device Farm для трафика и тестирования",
   description: "6000+ реальных Android устройств для трафика и тестирования приложений. iOS по запросу.",
@@ -136,7 +138,7 @@ export default function DevFarm() {
         <div style={{position:"relative",maxWidth:"900px"}}>
           <div className="df-badge"><div className="df-pulse"></div>Сервис активен · 6 000+ устройств онлайн</div>
           <h1 className="df-h1">Device Farm для<br/><span className="df-green">трафика</span> и <span className="df-blue">тестирования</span><br/>мобильных приложений</h1>
-          <p className="df-sub">Реальные Android и iOS устройства для накрутки трафика, тестирования приложений и автоматизации. 6 000 устройств Android, старт от 12%.</p>
+          <p className="df-sub">Реальные Android и iOS устройства для накрутки трафика, тестирования приложений и автоматизации. 6 000 устройств Android, старт от $12.</p>
           <div className="df-btns">
             <a href="tel:+79159112323" className="df-btn-p">📞 Позвонить нам</a>
             <a href="mailto:lipetsk-hpc@mail.ru" className="df-btn-s">✉️ Написать на почту</a>
@@ -148,7 +150,7 @@ export default function DevFarm() {
       {/* STATS */}
       <div style={{background:"#06080f"}}>
         <div className="df-stats">
-          {[["6 000+","Android устройств"],["от 12%","Стоимость трафика"],["24/7","Работа устройств"],["iOS","По запросу"]].map(([v,l])=>(
+          {[["6 000+","Android устройств"],["от $12","Стоимость трафика"],["24/7","Работа устройств"],["iOS","По запросу"]].map(([v,l])=>(
             <div key={l} className="df-stat"><div className="df-stat-v">{v}</div><div className="df-stat-l">{l}</div></div>
           ))}
         </div>
@@ -161,7 +163,7 @@ export default function DevFarm() {
           <div className="df-cards">
             {[
               {icon:"📱",title:"Реальные устройства",text:"Только физические смартфоны — никаких эмуляторов. Реальный user-agent, IMEI, поведение.",tag:"6 000 Android",tc:""},
-              {icon:"🚀",title:"Мобильный трафик",text:"Генерация органического трафика на приложения, сайты, магазины. Уникальные сессии с реальных SIM-карт.",tag:"от 12%",tc:""},
+              {icon:"🚀",title:"Мобильный трафик",text:"Генерация органического трафика на приложения, сайты, магазины. Уникальные сессии с реальных SIM-карт.",tag:"от $12",tc:""},
               {icon:"🧪",title:"Тестирование приложений",text:"Функциональное и нагрузочное тестирование на реальных устройствах с разными версиями Android и iOS.",tag:"QA & Testing",tc:"blue"},
               {icon:"🤖",title:"Автоматизация",text:"Поддержка Appium, UIAutomator, XCTest. Запуск сценариев на тысячах устройств одновременно.",tag:"Appium",tc:"blue"},
               {icon:"🌐",title:"Мобильные прокси",text:"Ротация IP через реальные мобильные SIM-карты. Уникальный IP на каждое устройство.",tag:"4G/5G SIM",tc:"purple"},
@@ -189,7 +191,7 @@ export default function DevFarm() {
               <h3>Android</h3>
               <div className="version">Android 9.0 — 14.0 · Разные производители</div>
               <ul>
-                {["6 000+ физических устройств","Samsung, Xiaomi, Realme, OPPO и др.","Реальные SIM-карты (МТС, Билайн, Мегафон)","Уникальные IMEI и fingerprint","Стоимость от 12% от суммы трафика"].map(i=><li key={i}>{i}</li>)}
+                {["6 000+ физических устройств","Samsung, Xiaomi, Realme, OPPO и др.","Реальные SIM-карты (МТС, Билайн, Мегафон)","Уникальные IMEI и fingerprint","Стоимость от $12 от суммы трафика"].map(i=><li key={i}>{i}</li>)}
               </ul>
               <div className="df-platform-count" style={{color:"#4ade80"}}>6 000+ <span style={{fontSize:"14px",color:"#94a3b8",fontWeight:400,marginLeft:"4px"}}>устройств</span></div>
             </div>
@@ -226,7 +228,7 @@ export default function DevFarm() {
           <div className="df-pricing">
             <div className="df-price-card">
               <h3>Старт</h3><p className="desc">Для небольших проектов и тестирования</p>
-              <div className="df-price">от 12%<sub> трафика</sub></div>
+              <div className="df-price">от $12<sub> трафика</sub></div>
               <p className="df-price-note">До 100 устройств</p>
               <ul className="df-price-features">{["До 100 Android устройств","Базовый трафик","Email поддержка","Статистика по устройствам","REST API доступ"].map(i=><li key={i}>{i}</li>)}</ul>
               <a href="#df-contacts" className="df-btn-plan outline">Обсудить условия</a>
