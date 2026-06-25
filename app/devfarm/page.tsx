@@ -1,10 +1,5 @@
 "use client";
 
-export const metadata = {
-  title: "DevFarm — Device Farm для трафика и тестирования",
-  description: "6000+ реальных Android устройств для трафика и тестирования приложений. iOS по запросу.",
-};
-
 export default function DevFarm() {
   return (
     <>
