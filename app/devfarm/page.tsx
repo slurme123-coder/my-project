@@ -1,4 +1,9 @@
-"use client";
+import { DevFarmForm } from "./DevFarmForm";
+
+export const metadata = {
+  title: "DevFarm — Device Farm для трафика и тестирования",
+  description: "6000+ реальных Android устройств для трафика и тестирования приложений. iOS по запросу.",
+};
 
 export default function DevFarm() {
   return (
@@ -262,26 +267,7 @@ export default function DevFarm() {
             </div>
             <div className="df-contact-box">
               <h3>Оставить заявку</h3>
-              <div className="df-form-row">
-                <div><label className="df-label">Имя</label><input className="df-input" type="text" placeholder="Иван Иванов"/></div>
-                <div><label className="df-label">Компания</label><input className="df-input" type="text" placeholder="ООО Ромашка"/></div>
-              </div>
-              <div className="df-form-group"><label className="df-label">Телефон / Email</label><input className="df-input" type="text" placeholder="+7 (000) 000-00-00"/></div>
-              <div className="df-form-group">
-                <label className="df-label">Задача</label>
-                <select className="df-input">
-                  <option value="">Выберите задачу...</option>
-                  <option>Трафик на приложение</option>
-                  <option>Тестирование Android</option>
-                  <option>Тестирование iOS</option>
-                  <option>Мобильные прокси</option>
-                  <option>Автоматизация</option>
-                  <option>Другое</option>
-                </select>
-              </div>
-              <div className="df-form-group"><label className="df-label">Описание проекта</label><textarea className="df-textarea" rows={4} placeholder="Опишите задачу, количество устройств, сроки..."></textarea></div>
-              <button className="df-submit" onClick={()=>alert('Заявка отправлена! Ответим в течение 2 часов.')}>Отправить заявку</button>
-              <p className="df-form-note">Ответим в течение 2 часов в рабочее время</p>
+              <DevFarmForm />
             </div>
           </div>
         </div>
